@@ -15,12 +15,12 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
+          <a href="single_page.html" class="pull-left visible-md visible-lg">
             <div id="logo-img"></div>
           </a>
 
           <div class="navbar-brand">
-            <a href="index.html"><h1>心艺少儿美术培训中心</h1></a>
+            <a href="single_page.html"><h1>心艺少儿美术培训中心</h1></a>
             <p>
 <!--               <img src="images/jumbotron_76.jpg" alt="LOGO"> -->
               <span>一切为了学生，为了一切学生</span>
@@ -37,12 +37,12 @@
         
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="visible-xs active">
+            <li id="navHomeButton" class="visible-xs active">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
-            <li>
-              <a href="menu-categories.html">
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> 学生作品</a>
             </li>
             <li>
@@ -69,9 +69,10 @@
     410-602-5008
     </a>
   </div>
-  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
-  <div id="main-content" class="container">
+  <div id="main-content" class="container"></div>
+
+ <!--  <div id="main-content" class="container">
     <div class="jumbotron">
       <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive ">
     </div>
@@ -92,8 +93,7 @@
         </a>
       </div>
     </div><!-- End of #home-tiles -->
-  </div><!-- End of #main-content -->
-
+  <!-- </div>End of #main-content -->
   <footer class="panel-footer">
     <div class="container">
       <div class="row">
@@ -121,7 +121,8 @@
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="javascripts/jquery-3.1.1.min.js"></script>
-  <script src="jjavascriptss/bootstrap.min.js"></script>
-  <script src="javascripts/script.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/ajax-utils.js"></script>
+  <script src="javascripts/main.js"></script>
 </body>
 </html>
